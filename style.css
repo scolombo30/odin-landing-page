@@ -29,9 +29,27 @@ body{
 .sub_content{
     display: flex;
     flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+    }
+.sub_content h1{
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+.sub_content p{
+    width: 350px;
+}
+.sub_content button{
+    align-self: flex-start;
 }
 button{
     width:fit-content;
+    background-color: #b8054f;
+    border: 4px solid #b8054f;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
 }
 .container_content{
     margin-left: auto;
@@ -46,4 +64,42 @@ button{
     width: 400px;
     border-radius: 35px;
     box-shadow: 0px 30px 40px -25px
+}
+
+.container_cards{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 30px;
+    width: 100%;
+    gap: 15px;
+}
+
+.cards{
+    background-color: #ffffff;
+    color: rgb(48, 48, 48);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+}
+.cards img{
+    width: 150px;
+    border-radius: 20px;
+}
+.cards a:visited,a{
+    color: rgb(48, 48, 48);
+}
+.cards p{
+    text-align: center;
+}
+
+.container_followme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.citazione{
+    background-color: #b8054f;
 }
