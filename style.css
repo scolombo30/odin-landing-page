@@ -104,6 +104,23 @@ button{
     background-color: #b8054f;
     color: white;
     font-weight: 600;
+    width: auto;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items:center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#cit{
+    font-weight: 200;
+    font-size: x-large;
+}
+#autore{
+    font-size: large;
+    align-self: flex-end;
 }
 /* styling footer */
 .footer{
