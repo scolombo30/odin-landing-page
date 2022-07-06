@@ -1,11 +1,12 @@
 body{
     margin: 0px;
+    padding-bottom: 0px;
 }
-
+/* container con header e sub_content */
 .bg_unico{
     background-color: #fedcea;
 }
-
+/* header, logo nell'header e links dell'header */
 .header{
     display: flex;
     align-items: center;
@@ -16,16 +17,15 @@ body{
     flex-shrink: 1px;
     margin-bottom: 0px;
 }
-
 .header img{
     width: 50px;
 }
-
 .container_links a{
     text-decoration-line: none;
     color: black;
     margin: 8px;
 }
+/* sub_content styling */
 .sub_content{
     display: flex;
     flex-direction: column;
@@ -51,6 +51,7 @@ button{
     color: white;
     font-weight: bold;
 }
+/* container contenente sub_content e img */
 .container_content{
     margin-left: auto;
     margin-right: auto;
@@ -65,7 +66,13 @@ button{
     border-radius: 35px;
     box-shadow: 0px 30px 40px -25px
 }
-
+/* container contenente le cards con i links ai social */
+.container_followme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
 .container_cards{
     display: flex;
     justify-content: space-evenly;
@@ -75,7 +82,6 @@ button{
     width: 100%;
     gap: 15px;
 }
-
 .cards{
     background-color: #ffffff;
     color: rgb(48, 48, 48);
@@ -93,13 +99,54 @@ button{
 .cards p{
     text-align: center;
 }
-
-.container_followme{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-}
+/* styling container citazione */
 .citazione{
     background-color: #b8054f;
+    color: white;
+    font-weight: 600;
 }
+/* styling footer */
+.footer{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+/* stile per suggerimento button */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
